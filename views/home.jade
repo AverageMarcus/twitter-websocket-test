@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  #search
+    .form-group
+      input(type='text', placeholder='Enter term to follow').form-control#searchTerm
+      #tokens(style='display:none;')
+        | !{JSON.stringify(tokens)}
+      
+  .row
+    .col-md-12
+      #tweets
